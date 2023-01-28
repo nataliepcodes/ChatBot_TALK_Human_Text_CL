@@ -22,8 +22,7 @@ exit_conditions = ("bye", "goodbye", "stop", "quit")
 # Define conversation structure
 while True:
     try:
-        print("Human: ", end='')
-        query = input()
+        query = input("Human: ")
         if query in exit_conditions:
             print(f"🤖{bot.name}: ", end='')
             print_say("Goodbye! Have a nice day!")
@@ -42,12 +41,6 @@ while True:
 # If the above command doesnt work, try installing the actual version or a version below (according to stackoverflow)
 # e.g pip install chatterbot==1.0.4
 
-
-""" VOICE TO TEXT CHAT """
-# Activate a virtual chatting environment: conda activate chatting
-# pip install SpeechRecognition
-# conda install pyaudio
-# In mysr.py script add: import speech_recognition as sr
 
 """ TEXT TO VOICE CHAT """
 # Python has two text to speech modules: pyttsx3 for Windows and gTTS for Mac and Linux
